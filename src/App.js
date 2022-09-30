@@ -20,7 +20,7 @@ function App() {
   return (
     <div>
       <div>
-        <h1>Heart rate limits calculate</h1>
+        <h1>Heart rate limits alculate</h1>
       </div>
       <form onSubmit={laske} >
         <div>
