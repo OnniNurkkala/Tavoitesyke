@@ -28,7 +28,7 @@ function App() {
         </div>
           <input value={age} onChange={e => setage(e.target.value)}/>
         <div>
-          <output>{upper.toFixed(0)}-{lower.toFixed(0)}</output>
+          <output>{lower.toFixed(0)}-{upper.toFixed(0)}</output>
         </div>
         <div>
           <button>Calculate</button>
