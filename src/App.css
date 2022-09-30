@@ -1,7 +1,29 @@
 body{
-  margin: 1em;
+  margin: 0.5em;
+  font-size: large;
+}
+
+h1{
+  padding-left: 0.4em;
 }
 
 button{
   margin: 1em;
+  background-color: blue;
+  font-style: italic;
+  color: aliceblue;
+}
+
+label{
+  padding-left: 1em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+input{
+  margin: 1em;
+}
+
+output{
+  padding-left: 1em;
 }

@@ -3,33 +3,32 @@ import './App.css';
 
 function App() {
 
-  const [height, setHeight] = useState(0);
-  const [weight, setWeight] = useState(0);
-  const [bmi, setBMI] = useState(0);
+  const [age, setage] = useState(0);
+  const [upper, setUpper] = useState(0)
+  const [lower, setLower] = useState(0)
 
   function laske(e){
     e.preventDefault();
-    const tulos = weight / (height * height);
-    //setBMI = tulos;
-    setBMI(tulos)
+
+    const tulos1 = (220-age) *0.85;
+    const tulos2 = (220-age) *0.65;
+
+    setUpper(tulos1)
+    setLower(tulos2)
   }
 
   return (
     <div>
       <div>
-        <h1>Calculating body mass index</h1>
+        <h1>Heart rate limits calculate</h1>
       </div>
       <form onSubmit={laske} >
         <div>
-          <label>Height</label>
-          <input value={height} onChange={e => setHeight(e.target.value)}/>
+          <label>age</label>
         </div>
+          <input value={age} onChange={e => setage(e.target.value)}/>
         <div>
-          <label>Weight</label>
-          <input value={weight} onChange={e => setWeight(e.target.value)}/>
-        </div>
-        <div>
-          <output>{bmi.toFixed(2)}</output>
+          <output>{upper.toFixed(0)}-{lower.toFixed(0)}</output>
         </div>
         <div>
           <button>Calculate</button>
